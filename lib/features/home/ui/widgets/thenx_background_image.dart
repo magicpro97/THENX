@@ -11,15 +11,15 @@ class THENXBackgroundImage extends StatelessWidget {
     return Stack(
         children: <Widget>[
           Container(
+            foregroundDecoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.3),
+            ),
             width: double.infinity,
             child: CachedNetworkImage(
               placeholder: (context, url) => CircularProgressIndicator(),
               imageUrl: imageUrl,
               fit: BoxFit.fill,
             ),
-          ),
-          Container(
-            color: Colors.black.withOpacity(0.3),
           ),
         ],
     );
