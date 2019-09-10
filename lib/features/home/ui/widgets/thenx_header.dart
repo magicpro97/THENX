@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:thenx/features/home/ui/widgets/thenx_background_image.dart';
 import 'package:thenx/features/home/ui/widgets/thenx_reaction.dart';
+import 'package:thenx/features/shared/widgets/thenx_background_image.dart';
+import 'package:thenx/features/shared/widgets/thenx_card_tag.dart';
 
 class THENXHeader extends StatelessWidget {
   @override
@@ -18,21 +19,8 @@ class THENXHeader extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 50.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius:
-                        BorderRadius.horizontal(right: Radius.circular(5.0)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "WORKOUT OF THE DAY",
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
+                child: THENXCardTag(
+                  content: "WORKOUT OF THE DAY",
                 ),
               ),
               Container(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thenx/features/home/ui/widgets/thenx_background_image.dart';
+import 'package:thenx/features/shared/widgets/thenx_background_image.dart';
 
 class THENXThreadCard extends StatelessWidget {
   final String text;
