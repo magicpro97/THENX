@@ -68,11 +68,7 @@ class NewsContentCard extends StatelessWidget {
           color: iconColor,
           size: 32.0,
         ),
-        Padding(
-          padding: const EdgeInsets.only(
-            left: 16.0,
-          ),
-          child: Column(
+        Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -86,7 +82,6 @@ class NewsContentCard extends StatelessWidget {
               ),
             ],
           ),
-        ),
       ],
     );
   }

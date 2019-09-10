@@ -7,18 +7,21 @@ import 'package:thenx/features/news/ui/widgets/news_reaction.dart';
 class NewsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        _buildTopContent(),
-        NewsContentCard(
-          imageUrl:
-              "http://dulichvietnam.com.vn/data/D%E1%BB%A5ng-c%E1%BB%A5-gym-5.jpg",
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: NewsReaction(),
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+      child: Column(
+        children: <Widget>[
+          _buildTopContent(),
+          NewsContentCard(
+            imageUrl:
+            "http://dulichvietnam.com.vn/data/D%E1%BB%A5ng-c%E1%BB%A5-gym-5.jpg",
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: NewsReaction(),
+          )
+        ],
+      ),
     );
   }
 

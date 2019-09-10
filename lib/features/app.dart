@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thenx/features/news/news_page.dart';
+import 'package:thenx/features/master/master_page.dart';
 import 'package:thenx/features/shared/themes/theme_data.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'THENX',
       theme: themeData,
-      home: NewsPage(),
+      home: MasterPage(),
     );
   }
 }

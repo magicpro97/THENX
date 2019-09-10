@@ -4,7 +4,7 @@ import 'package:thenx/features/home/ui/widgets/thenx_reaction.dart';
 import 'package:thenx/features/shared/widgets/thenx_background_image.dart';
 import 'package:thenx/features/shared/widgets/thenx_card_tag.dart';
 
-class THENXHeader extends StatelessWidget {
+class THENXHomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
